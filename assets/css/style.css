@@ -1,0 +1,216 @@
+.navbar {
+    position: absolute;
+    padding: 2rem 0;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    right:0;  
+    flex-wrap: nowrap;  
+    display: flex;
+}
+.navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+}
+.navbar > .container {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navbar-nav {
+    display: flex;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+.navbar .navbar-collapse {
+    display: flex;
+    align-items: center;
+}
+.navbar-nav li {
+    margin-left: 2rem;
+}
+.navbar-transparent .navbar-nav li a {
+    color: #fff;
+    opacity: .6;
+}
+.navbar-default .navbar-nav li a {
+    color: #444;
+}
+.navbar-nav li a:hover {
+    opacity: 1;
+}
+.navbar-nav li a.active {
+    opacity: 1;
+}
+.navbar .navbar-brand img {
+    height: 50px
+}
+section#hero {
+    padding-top: 13rem;
+    background-color: var(--primary);
+    min-height: 850px;
+
+    position: relative;
+}
+section#hero .hero-text {
+    text-align: center;
+}
+section#hero .hero-text h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+section#hero .hero-text .hero-desc {
+    color: #fff;
+    opacity: 70%;
+    margin: 2rem 0;
+}
+.hero-img {
+    position: absolute;
+    bottom: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-img img {
+    width: 100%;
+}
+section#companies {
+    padding-top: 3rem;
+    margin: 15rem 0 5rem;
+}
+section#companies .section-header img {
+    width: 3rem
+}
+section#companies h3 {
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    color: #51565A;
+    margin-top: 1rem;
+}
+section#companies .company {
+    width: 100%;
+}
+section#companies .company img {
+    width: 100%;
+    margin-top: 5rem;
+}
+section#account img {
+    width: 100%;
+}
+section#account .section-header {
+    margin-bottom: 1.5rem;
+}
+section#account h1 {
+    font-size: 3rem ;
+}
+section#account p {
+    color: #7E89A6;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+section#customer{
+    margin: 8rem 0 0;
+}
+section#customer .section-title{
+    font-size: 3rem;
+}
+section#customer img{
+    width: 100%;
+}
+section#banner img {
+    width: 100%;
+}
+#content {
+    padding-top: 8rem;
+    min-height: 60vh;
+}
+#content .the-title {
+    font-size: 3.5rem;
+    color: #434343;
+    font-family: 'Inter';
+    margin-bottom: 2rem;
+
+}
+#content .page-header {
+    margin-bottom: 2rem;
+}
+#content .category-name {
+    font-size: 2.5rem;
+    color: #334;
+    margin-bottom: 3rem;
+}
+#content .category-posts {
+    margin-bottom: 3rem;
+}
+.the-content p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #555;
+}
+.single .post-thumbnail {
+    width: 100%;
+    margin-bottom: 2rem;
+    height: 500px;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 36px rgba(0,0,0,.1);
+}
+#content .single .the-title {
+    font-size: 3rem;
+}
+.single .single-header {
+    margin: 2rem 0;
+}
+.single .single-content p {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #555;
+}
+.card .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: .5rem;
+    box-shadow: 0 4px 38px rgba(0,0,0,.1);
+}
+.card .card-body {
+    padding: 1rem 0;
+}
+.card .card-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    color: #333;
+    margin-bottom: 1rem;
+}
+.card .card-body p {
+    color: #666;
+    font-size: .95rem;
+}
+#footer {
+    border-top: 1px solid #D5D5D5;
+    padding: 3rem 0;
+}
+#footer img {
+    height: 3rem
+}
+#footer p {
+    margin-top: 1rem;
+    color: #667;
+}
+#footer .footer-title {
+    font-size: 1.5rem;
+    font-family: 'Inter';
+    color: #434343;
+    margin-bottom:2rem;
+}
+#footer ul {
+    list-style: none;
+}
+#footer ul li {
+    margin-bottom: 1rem;
+}
+#footer ul li a{
+    color: #667;
+}

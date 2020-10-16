@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Inter';
+    font-weight: 700;
+    src: url(./../fonts/Inter-Bold-slnt=0.ttf)
+}
+@font-face {
+    font-family: 'Inter';
+    font-weight: 400;
+    src: url(./../fonts/Inter-Regular-slnt=0.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url(./../fonts/Poppins-Regular.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: url(./../fonts/Poppins-Medium.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: url(./../fonts/Poppins-Bold.ttf)
+}
+:root {
+    --primary:#308af8
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins";
+}
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem;
+}
+.row {
+    margin: 0 -1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.row + .row {
+    margin-top: 1rem;
+}
+[class*="col-"] {
+    padding: 0 1rem;
+}
+[class*="col-"].no-pad-horizontal {
+    padding: 0 ;
+}
+.cover-image {
+    width: 100%;
+    object-fit: cover;
+}
+.ml--100    { margin-left: -100px; }
+.mb-2       { margin-bottom: 2rem !important }
+.pt-24       { padding-top: 12rem !important }
+.pt-12       { padding-top: 6rem !important }
+.ml-auto    { margin-left: auto !important }
+.mr-auto    { margin-right: auto !important }
+.mx-auto    { margin-left: auto; margin-right: auto !important }
+.text-muted { color: #fff; opacity: 47% }
+.text-center { text-align: center; }
+.d-flex { display: flex }
+.align-items-center { align-items: center; }
+.flex-col { flex-direction: column; }
+a.text-primary {
+    color: var(--primary);
+}
+a {
+    text-decoration: none;
+    color: #444;
+    transition: all .2s;
+}
+a:not(.btn):hover {
+    color: var(--primary);
+}
+.btn {
+    padding: 0.6rem 1rem;
+    border: none;
+    transition: all .2s;
+    cursor: pointer;
+    border-radius: .2rem;
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+.btn-outline-white {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.btn-long {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.btn-white {
+    border: 2px solid white;
+    background-color: #fff;
+    color: var(--primary);
+}
+.btn-xl {
+    padding: 1rem 4rem;
+    font-size: 1.3rem;
+    border-radius: .5rem;
+    font-weight: 500;
+}
+.btn-white:hover {
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid white;
+}
+.col-1 { flex: none; width: calc(100% / 12 * 1) }  
+.col-2 { flex: none; width: calc(100% / 12 * 2) }  
+.col-3 { flex: none; width: calc(100% / 12 * 3) }  
+.col-4 { flex: none; width: calc(100% / 12 * 4) }  
+.col-5 { flex: none; width: calc(100% / 12 * 5) }  
+.col-6 { flex: none; width: calc(100% / 12 * 6) }  
+.col-7 { flex: none; width: calc(100% / 12 * 7) }  
+.col-8 { flex: none; width: calc(100% / 12 * 8) }  
+.col-9 { flex: none; width: calc(100% / 12 * 9) }  
+.col-10 { flex: none; width: calc(100% / 12 * 10) }  
+.col-11 { flex: none; width: calc(100% / 12 * 11) }  
+.col-12 { flex: none; width: calc(100% / 12 * 12) }  
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+    .col-md-1 { flex: none; width: calc(100% / 12 * 1) }  
+    .col-md-2 { flex: none; width: calc(100% / 12 * 2) }  
+    .col-md-3 { flex: none; width: calc(100% / 12 * 3) }  
+    .col-md-4 { flex: none; width: calc(100% / 12 * 4) }  
+    .col-md-5 { flex: none; width: calc(100% / 12 * 5) }  
+    .col-md-6 { flex: none; width: calc(100% / 12 * 6) }  
+    .col-md-7 { flex: none; width: calc(100% / 12 * 7) }  
+    .col-md-8 { flex: none; width: calc(100% / 12 * 8) }  
+    .col-md-9 { flex: none; width: calc(100% / 12 * 9) }  
+    .col-md-10 { flex: none; width: calc(100% / 12 * 10) }  
+    .col-md-11 { flex: none; width: calc(100% / 12 * 11) }  
+    .col-md-12 { flex: none; width: calc(100% / 12 * 12) }  
+}
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .col-lg-1 { flex: none; width: calc(100% / 12 * 1) }  
+    .col-lg-2 { flex: none; width: calc(100% / 12 * 2) }  
+    .col-lg-3 { flex: none; width: calc(100% / 12 * 3) }  
+    .col-lg-4 { flex: none; width: calc(100% / 12 * 4) }  
+    .col-lg-5 { flex: none; width: calc(100% / 12 * 5) }  
+    .col-lg-6 { flex: none; width: calc(100% / 12 * 6) }  
+    .col-lg-7 { flex: none; width: calc(100% / 12 * 7) }  
+    .col-lg-8 { flex: none; width: calc(100% / 12 * 8) }  
+    .col-lg-9 { flex: none; width: calc(100% / 12 * 9) }  
+    .col-lg-10 { flex: none; width: calc(100% / 12 * 10) }  
+    .col-lg-11 { flex: none; width: calc(100% / 12 * 11) }  
+    .col-lg-12 { flex: none; width: calc(100% / 12 * 12) }  
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .col-xl-1 { flex: none; width: calc(100% / 12 * 1) }  
+    .col-xl-2 { flex: none; width: calc(100% / 12 * 2) }  
+    .col-xl-3 { flex: none; width: calc(100% / 12 * 3) }  
+    .col-xl-4 { flex: none; width: calc(100% / 12 * 4) }  
+    .col-xl-5 { flex: none; width: calc(100% / 12 * 5) }  
+    .col-xl-6 { flex: none; width: calc(100% / 12 * 6) }  
+    .col-xl-7 { flex: none; width: calc(100% / 12 * 7) }  
+    .col-xl-8 { flex: none; width: calc(100% / 12 * 8) }  
+    .col-xl-9 { flex: none; width: calc(100% / 12 * 9) }  
+    .col-xl-10 { flex: none; width: calc(100% / 12 * 10) }  
+    .col-xl-11 { flex: none; width: calc(100% / 12 * 11) }  
+    .col-xl-12 { flex: none; width: calc(100% / 12 * 12) }  
+}
+@media screen and (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
